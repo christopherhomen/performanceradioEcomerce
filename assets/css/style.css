@@ -1,5 +1,66 @@
+/*
+
+----------------------------------------------------------------
+Explicacion: 
+Claro, aquí te explico cada sección del archivo CSS que me proporcionaste:
+
+1. **General**: Esta sección contiene estilos que se aplican a todo el documento. Por ejemplo, la regla `body` establece la fuente y el color del texto para todo el cuerpo del documento. La regla `a` establece el color y la decoración del texto para todos los enlaces.
+
+2. **Preloader**: Esta sección contiene estilos para el preloader. Un preloader es una animación que se muestra mientras se carga el contenido de una página web. En este caso, la regla `#preloader` establece la posición, tamaño y color de fondo del preloader. La regla `#preloader:before` agrega una animación al preloader.
+
+3. **Back to top button**: Esta sección contiene estilos para un botón que permite al usuario volver al principio de la página. La regla `.back-to-top` establece la posición, tamaño y color de fondo del botón. La regla `.back-to-top i` establece el tamaño y el color del ícono dentro del botón.
+
+4. **Header**: Esta sección contiene estilos para el encabezado de la página. La regla `#header` establece el fondo, la transición y la posición del encabezado. La regla `#header .logo` establece el tamaño y el estilo de la fuente para el logotipo dentro del encabezado.
+
+5. **Header Social Links**: Esta sección contiene estilos para los enlaces sociales en el encabezado de la página. La regla `.header-social-links` establece el relleno y la posición de los enlaces sociales. La regla `.header-social-links a` establece el color, tamaño y transición de los íconos de los enlaces sociales.
+
+6. **Navigation Menu**: Esta sección contiene estilos para el menú de navegación de la página. La regla `.navbar` elimina el relleno del menú de navegación. La regla `.navbar ul` establece la posición y estilo de la lista desordenada que contiene los elementos del menú de navegación.
+
+7. **Mobile Navigation**: Esta sección contiene estilos para el menú de navegación en dispositivos móviles. La regla `.mobile-nav-toggle` establece el color, tamaño y posición del botón que muestra y oculta el menú de navegación en dispositivos móviles.
+
+8. **Hero Section**: Esta sección contiene estilos para la sección hero de la página. La regla `#hero` establece el ancho, alto y fondo de la sección hero. La regla `#hero .hero-container` establece la posición y alineación del contenido dentro de la sección hero.
+
+9. **Sections General**: Esta sección contiene estilos generales para las diferentes secciones de la página. Por ejemplo, la regla `.section-title h2` establece el tamaño y estilo de fuente para los títulos de las diferentes secciones.
+
+10. **About**: Esta sección contiene estilos para la sección "About" (Acerca de) de la página. Por ejemplo, la regla `.about .content h3` establece el tamaño y estilo de fuente para los subtítulos dentro de esta sección.
+
+11. **Counts**: Esta sección contiene estilos para una sección que muestra contadores numéricos en la página. Por ejemplo, la regla `.counts .counters span` establece el tamaño y color del texto para los números dentro de esta sección.
+
+12. **Our Values**: Esta sección contiene estilos para una sección que muestra los valores o principios fundamentales en la página. Por ejemplo, la regla `.our-values .card-body` establece el fondo, relleno y sombra para las tarjetas que muestran cada valor o principio fundamental.
+
+13. **Clients**: Esta sección contiene estilos para una sección que muestra logos o imágenes de clientes en la página. Por ejemplo, la regla `.clients img` establece el ancho máximo y transición para las imágenes o logos dentro de esta sección.
+
+14. **Services**: Esta sección contiene estilos para una sección que muestra los servicios ofrecidos en la página. Por ejemplo, la regla `.services .icon-box` establece el relleno, fondo y sombra para las cajas que muestran cada servicio ofrecido.
+
+15. **Testimonials**: Esta sección contiene est
+16. **Cta**: Esta sección contiene estilos para una sección de llamado a la acción (Call to Action) en la página. Por ejemplo, la regla `.cta` establece el fondo y relleno para esta sección. La regla `.cta h3` establece el tamaño y estilo de fuente para el título dentro de esta sección.
+
+17. **Portfolio**: Esta sección contiene estilos para una sección de portafolio en la página. Por ejemplo, la regla `.portfolio #portfolio-flters` establece el estilo y posición para los filtros del portafolio. La regla `.portfolio .portfolio-item` establece el margen y tamaño para cada elemento del portafolio.
+
+18. **Portfolio Details**: Esta sección contiene estilos para una página de detalles de un elemento del portafolio. Por ejemplo, la regla `.portfolio-details .portfolio-info` establece el relleno y sombra para la información detallada de un elemento del portafolio.
+
+19. **Team**: Esta sección contiene estilos para una sección que muestra información sobre el equipo en la página. Por ejemplo, la regla `.team .member` establece el margen, fondo y sombra para cada miembro del equipo mostrado en esta sección.
+
+20. **Pricing**: Esta sección contiene estilos para una sección que muestra información sobre precios en la página. Por ejemplo, la regla `.pricing .box` establece el relleno, fondo y sombra para cada caja que muestra información sobre un plan de precios.
+
+21. **Frequently Asked Questions**: Esta sección contiene estilos para una sección de preguntas frecuentes en la página. Por ejemplo, la regla `.faq .faq-list` establece el relleno y posición para la lista de preguntas frecuentes. La regla `.faq .faq-list li` establece el relleno, fondo y borde para cada pregunta dentro de esta sección.
+
+22. **Contact**: Esta sección contiene estilos para una sección de contacto en la página. Por ejemplo, la regla `.contact .info` establece el ancho y fondo para esta sección. La regla `.contact .info i` establece el tamaño y color del ícono dentro de esta sección.
+
+23. **Breadcrumbs**: Esta sección contiene estilos para los breadcrumbs (migas de pan) en la página. Los breadcrumbs son una serie de enlaces que muestran la ubicación actual del usuario dentro de la estructura jerárquica de un sitio web. Por ejemplo, la regla `.breadcrumbs` establece el relleno y fondo para los breadcrumbs.
+
+24. **Footer**: Esta sección contiene estilos para el pie de página (footer) en la página. Por ejemplo, la regla `#footer` establece el fondo y color del texto para el pie de página. La regla `#footer .footer-top` establece la posición y alineación del contenido dentro del pie de página.
+
+Espero que esta explicación te haya sido ú
+*/
+
+
 /*--------------------------------------------------------------
 # General
+1. ** General **: Esta sección contiene estilos que se aplican a todo el documento.Por ejemplo,
+la regla `body` establece la fuente y el color del texto para todo el cuerpo del documento.La regla `a` establece el color y la decoración del texto para todos los enlaces.
+
+
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -30,6 +91,11 @@ h6 {
 
 /*--------------------------------------------------------------
 # Preloader
+2. ** Preloader **: Esta sección contiene estilos para el preloader.Un preloader es una animación que se muestra mientras se carga el contenido de una página web.En este caso,
+la regla `#preloader` establece la posición,
+tamaño y color de fondo del preloader.La regla `#preloader:before` agrega una animación al preloader.
+
+
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
@@ -78,6 +144,10 @@ h6 {
 
 /*--------------------------------------------------------------
 # Back to top button
+3. ** Back to top button **: Esta sección contiene estilos para un botón que permite al usuario volver al principio de la página.La regla `.back-to-top` establece la posición,
+tamaño y color de fondo del botón.La regla `.back-to-top i` establece el tamaño y el color del ícono dentro del botón.
+
+
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
@@ -111,6 +181,10 @@ h6 {
 
 /*--------------------------------------------------------------
 # Header
+4. ** Header **: Esta sección contiene estilos para el encabezado de la página.La regla `#header` establece el fondo,
+la transición y la posición del encabezado.La regla `#header .logo` establece el tamaño y el estilo de la fuente para el logotipo dentro del encabezado.
+
+
 --------------------------------------------------------------*/
 #header {
   background: rgba(21, 5, 23, 0.25);
