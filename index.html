@@ -79,7 +79,7 @@
       </video>
       <div class="hero-container-play">
         <!-- LOGO: -->
-        <a href="#" class="logo me-auto me-lg-0"><img src="assets/img/logo/logo1.png" alt="" class="img-fluid" style="width: 200px; margin-top: 230px;"></a>
+        <a href="#" class="logo me-auto me-lg-0"><img src="assets/img/logo/logo1.png" alt="" class="img-fluid" style="width: 70vh; margin-top: 230px;"></a>
         <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
 
         <!-- boton play -->
@@ -91,54 +91,55 @@
         <!-- Boton play 2 -->
 <!--        <a class="glightbox play-btn"> <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;"/></a>-->
 
-<!-- Inicio reproductor       -->
+<!-- Inicio reproductor -->
  
 <div id= "play2" class="containerplay2 img-fluid" style="margin-bottom: 135px;">
-            <div class="player img-fluid">
-              <div class="player__controls img-fluid">
-                <div class="player__btn player__btn--small img-fluid" id="previous">
-                  <i class="fas fa-arrow-left"></i>
-                </div>
-                <h5 class="player__title img-fluid">Reproduciendo</h5>
-                <div class="player__btn player__btn--small img-fluid" id="icon-menu">
-                  <i class="fas fa-bars img-fluid"></i>
-                </div>
-              </div>
-              <div class="player__album img-fluid">
-                <img src="assets/img/locutor/diana_tapatia.png" alt="Album Cover" class="player__img img-fluid" loading="lazy"/>
-              </div>
-              
-              <h2 src="MetadatosRadio.aspx?servidor=https://cp9.serverse.com/proxy/perforCHUMILLASmp=/index.htmlCHUMILLASsid=1&amp;" class="player__artist img-fluid">Performance Radio </h2>
-              <h3 class="player__song img-fluid">Radio</h3>
-         
-              <input type="range" value="20" min="0" class="player__level img-fluid" id="range" />
-              <div class="audio-duration img-fluid">
-                <div class="start img-fluid">00:01</div>
-                <div class="end img-fluid">04:30</div>
-              </div>
-         
-              <audio class="player__audio img-fluid" controls id="audio">
-                
-                <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;" type="audio/mpeg" />
-              </audio>
-         
-              <div class="player__controls img-fluid">
-                <div class="player__btn player__btn--medium img-fluid" id="backward">
-                  <i class="fas fa-backward img-fluid"></i>
-                </div>
-         
-                <div class="player__btn player__btn--medium blue play img-fluid" id="play">
-                  <i class="fas fa-play play-btn img-fluid"></i>
-                  <i class="fas fa-pause pause-btn hide img-fluid"></i>
-                </div>
-         
-                <div class="player__btn player__btn--medium img-fluid" id="forward">
-                  <i class="fas fa-forward img-fluid"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-<!-- Fin Reproductor  -->
+  <div class="player img-fluid">
+    <div class="player__controls img-fluid">
+      <div class="player__btn player__btn--small img-fluid" id="previous">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <h5 class="player__title img-fluid">Reproduciendo</h5>
+      <div class="player__btn player__btn--small img-fluid" id="icon-menu">
+        <i class="fas fa-bars img-fluid"></i>
+      </div>
+    </div>
+    <div class="player__album img-fluid">
+      <img src="assets/img/locutor/diana_tapatia.png" alt="Album Cover" class="player__img img-fluid" loading="lazy"/>
+    </div>
+    
+    <h2 id="locutorName" class="player__artist img-fluid">Performance Radio</h2>
+    <h3 class="player__song img-fluid">Radio</h3>
+
+    <input type="range" value="20" min="0" class="player__level img-fluid" id="range" />
+    <div class="audio-duration img-fluid">
+      <div class="start img-fluid">00:01</div>
+      <div class="end img-fluid">04:30</div>
+    </div>
+
+    <audio class="player__audio img-fluid" controls id="audio">
+      
+      <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;" type="audio/mpeg" />
+    </audio>
+
+    <div class="player__controls img-fluid">
+      <div class="player__btn player__btn--medium img-fluid" id="backward">
+        <i class="fas fa-backward img-fluid"></i>
+      </div>
+
+      <div class="player__btn player__btn--medium blue play img-fluid" id="play">
+        <i class="fas fa-play play-btn img-fluid"></i>
+        <i class="fas fa-pause pause-btn hide img-fluid"></i>
+      </div>
+
+      <div class="player__btn player__btn--medium img-fluid" id="forward">
+        <i class="fas fa-forward img-fluid"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin Reproductor -->
+
       </div>
     </div>
   
@@ -694,11 +695,12 @@
           <div class="col-lg-4 col-md-6">
             <div class="box">
               <h3>Promociones Publicitarias</h3>
-              <h4><sup>$</sup>Por definir<span> / month</span></h4>
+              <h4><sup>$</sup>20<span> / mes</span></h4>
               <ul>
-                <li>Obten las mejores espacios para promocionar tus productos en la web<</li>
-                <!-- <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
+                <li>Obten las mejores espacios para promocionar tus productos en la web</li>
+                <li>$100: 6 meses</li>         
+                        <!-- <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
                 <li class="na">Pharetra massa</li>
                 <li class="na">Massa ultricies mi</li> -->
               </ul>
@@ -711,10 +713,10 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box featured">
               <h3>Promociones Radiales</h3>
-              <h4><sup>$</sup>Por definir<span> / month</span></h4>
+              <h4><sup>$</sup>20<span> * 30 sg</span></h4>
               <ul>
-                <li>Contrata los mejores locutores para promocionar tu marca, empresa y más</li>
-                <!-- <li>Nec feugiat nisl</li>
+                <li>Obten las mejores espacios para promocionar tus productos en nuestros programas en vivo</li>
+                <li>$100 por diez promociones de 30 segundos a lo largo de un mes.</li>                 <!-- <li>Nec feugiat nisl</li>
                 <li>Nulla at volutpat dola</li>
                 <li>Pharetra massa</li>
                 <li class="na">Massa ultricies mi</li> -->
@@ -728,7 +730,7 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="box">
               <h3>Creación de Cuñas Radiales</h3>
-              <h4><sup>$</sup>Por definir<span> / month</span></h4>
+              <h4><sup>$</sup>30<span> * 30sg </span></h4>
               <ul>
                 <li>Obten las mejores voces para tus cuñas personalizadas</li>
                 <!-- <li>Nec feugiat nisl</li>
@@ -981,6 +983,9 @@
   <script src="assets/js/main.js"></script>
   <!-- Play button -->
   <script src="assets/js/playbtn.js"></script>
+  <!-- Animacion para el boton Whatsapp -->
+  <script src="assets/js/whatsapp.js"></script>
+
   <!-- Adicionales -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
@@ -996,6 +1001,36 @@
                        })
 
                     </script>
+<!-- Script del reproductor -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script>
+  // Acceder al contenido del iframe
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://cp9.serverse.com/proxy/perfor?mp=/;&fondo=12&formato=mpeg&color=3&titulo=2&autoStart=1&vol=5&tipo=16&nombre=Al+aire%3a&botonPlay=3&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png&server=https://cp9.serverse.com/proxy/perforCHUMILLASmp=/index.htmlCHUMILLASsid=1';
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  iframe.addEventListener('load', function() {
+    // Obtener el nombre del locutor en vivo
+    var span = iframe.contentWindow.document.querySelector('span'); // Reemplaza 'span' con el selector adecuado
+    var locutorName = span.textContent;
+
+    // Mostrar el nombre del locutor en vivo en el h2
+    var h2 = document.getElementById('locutorName');
+    h2.textContent = locutorName;
+  });
+</script>
+
+
+
+
+
+
+
+
+                    
+                    
 </body>
 
 </html>
