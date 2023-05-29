@@ -75,7 +75,7 @@
     <div class="hero-container img-fluid">
       <!-- Agregado -->
       <video autoplay muted loop id="myVideo" class="content-video">
-        <source src="assets/video/video3.mp4" type="video/mp4">
+        <source src="assets/video/bannerNuevo4.mp4" type="video/mp4">
       </video>
       <div class="hero-container-play">
         <!-- LOGO: -->
@@ -887,8 +887,8 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
 
               <!-- <form action="https://formsubmit.co/performanceradio20@gmail.com" method="post" role="form" class="php-email-form">  -->
-            <form name="formulario-contacto"  method="post" role="form" class="php-email-form">
-              <div class="row">
+                <form name="formulario-contacto" method="post" action="assets/js/enviar_correo.php" role="form" class="php-email-form">
+                  <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                 </div>
@@ -990,16 +990,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
   <script>
-                       const btnEnvio = docunent.getElementById("enviarCorreo");
-                       btnEnvio.addEventListener("click", function(e) {
-                       e.preventDefault();
-                       const email = document.getElenentById("email").value;
-                       const nombre = document.getElementById("name").value;
-                       const mensaje = docuent.getElement8yId("message").value;
-                       window.location.href=`mailto:performanceradio20@gmail.com?
-                       subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${email}%0AMensaje%3A${mensaje}`;
-                       })
-
+    const btnEnvio = document.getElementById("enviarCorreo");
+    btnEnvio.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById("email").value;
+      const nombre = document.getElementById("name").value;
+      const asunto = document.getElementById("subject").value;
+      const mensaje = document.getElementById("message").value;
+      
+      const mailtoLink = `mailto:chris.a.d.97@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(`Nombre: ${nombre}\nCorreo: ${email}\nMensaje: ${mensaje}`)}`;
+      
+      window.location.href = mailtoLink;
+    });
+    
                     </script>
 <!-- Script del reproductor -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
