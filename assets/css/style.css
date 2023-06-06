@@ -62,75 +62,10 @@ la regla `body` establece la fuente y el color del texto para todo el cuerpo del
 
 
 --------------------------------------------------------------*/
+/*
 
-/* :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #e83e8c; /* Cambiar a un tono de rosa neón */
-  --bs-secondary: #ffd700; /* Cambiar a un tono de amarillo neón */
-  --bs-success: #00ff00; /* Cambiar a un tono de verde neón */
-  --bs-info: #00ffff; /* Cambiar a un tono de cian neón */
-  --bs-warning: #ff8c00; /* Cambiar a un tono de naranja neón */
-  --bs-danger: #ff0000; /* Cambiar a un tono de rojo neón */
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 232, 62, 140; /* Actualizar el valor RGB del color primario */
-  --bs-secondary-rgb: 255, 215, 0; /* Actualizar el valor RGB del color secundario */
-  --bs-success-rgb: 0, 255, 0; /* Actualizar el valor RGB del color de éxito */
-  --bs-info-rgb: 0, 255, 255; /* Actualizar el valor RGB del color de información */
-  --bs-warning-rgb: 255, 140, 0; /* Actualizar el valor RGB del color de advertencia */
-  --bs-danger-rgb: 255, 0, 0; /* Actualizar el valor RGB del color de peligro */
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 0, 0, 0; /* Cambiar a negro */
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #fff; /* Cambiar a blanco */
-  --bs-body-bg: #000; /* Cambiar a negro */
-  --bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.5rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-  --bs-link-color: #00bfff; /* Cambiar a un tono de azul neón */
-  --bs-link-hover-color: #00ffff; /* Cambiar a un tono de cian neón */
-  --bs-code-color: #f8c291; /* Cambiar a un tono de naranja claro neón */
-  --bs-highlight-bg: #4d4d4d; /* Cambiar a un tono de gris oscuro */
-} */
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
