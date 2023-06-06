@@ -818,7 +818,11 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
 
               <!-- <form action="https://formsubmit.co/performanceradio20@gmail.com" method="post" role="form" class="php-email-form">  -->
-                <form name="formulario-contacto" method="post" action="assets/js/enviar_correo.php" role="form" class="php-email-form">
+                <form 
+                action="https://formspree.io/f/xknalqjn"
+                method="POST"
+                
+                >
                   <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -838,7 +842,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Su mensaje fue enviado, gracias!</div>
               </div>
-              <div class="text-center"><button id="enviarCorreo" type="submit">Enviar Mensaje</button></div>
+              <div class="text-center"><button id="enviarCorreo" type="submit" formtarget="_blank" class="php-email-form">Enviar Mensaje</button></div>
             </form>
                   
           </div>
@@ -920,7 +924,7 @@
   <!-- Adicionales -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
-  <script>
+  <!-- <script>
     const btnEnvio = document.getElementById("enviarCorreo");
     btnEnvio.addEventListener("click", function(e) {
       e.preventDefault();
@@ -935,7 +939,7 @@
       window.location.href = mailtoLink;
     });
     
-                    </script>
+                    </script> -->
 <!-- Script del reproductor -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/jquery.js"></script>
