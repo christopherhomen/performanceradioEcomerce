@@ -62,6 +62,10 @@ la regla `body` establece la fuente y el color del texto para todo el cuerpo del
 
 
 --------------------------------------------------------------*/
+/*
+
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1915,6 +1919,9 @@ section {
     text-align: center;
     font-size: 30px;
     z-index: 100;
+    display: none;
+    transition: opacity 0.5s ease; /* Transición suave de la opacidad */
+
 		}
 
 		.whatsapp-icon {
@@ -2040,6 +2047,11 @@ section {
   margin: 0;
 }
 
+@keyframes progressAnimation {
+  0% { background-size: 0% 100%; }
+  100% { background-size: 100% 100%; }
+}
+
 #play2 .player__level {
   width: 80%;
   -webkit-appearance: none;
@@ -2053,6 +2065,7 @@ section {
   background-color: #d7dbdd;
   height: 6px;
   border-radius: 3px;
+  animation: progressAnimation 2s linear infinite;
 }
 
 #play2 .player__level::-webkit-slider-thumb {
@@ -2073,6 +2086,8 @@ section {
   color: #a1a1a1;
   letter-spacing: 1px;
 }
+
+
 
 .start {
   flex: 1;

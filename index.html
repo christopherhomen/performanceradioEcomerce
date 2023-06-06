@@ -162,7 +162,9 @@
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
 
-          <li class="dropdown"><a th:href="@{/login}"><span>Usuario</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a th:href="@{/login}"><span>Usuario</span> <i class="bi bi-chevron-down"></i></a> -->
+          <li class="dropdown"><a href="iniciosesion.html"><span>Usuario</span> <i class="bi bi-chevron-down"></i></a>
+
             <ul>
               <li><a th:href="@{/login}">Iniciar Sesión</a></li>
               <li><a th:href="@{/crear}">Registro</a></li>
@@ -290,7 +292,9 @@
     </section><!-- End Our Values Section -->
 
 
+<!-- Prueba  -->
 
+<!-- Fin prueba -->
 <!--     ======= Cta Section ======= -->
 <section id="cta" class="cta">
     <div class="container">
@@ -299,9 +303,24 @@
             <h3>Nuestros Programas</h3>
             <p>
                 Tenemos un programa especial para ti.</p>
-
+              
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+
+
+              </div>
+              <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/programas/lady.png" class="d-block w-100" alt="...">
                     </div>
@@ -362,39 +381,8 @@
 <!--    End Cta Section 
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
 
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
+    <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -431,93 +419,12 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Testimonios</h2>
-          <p>Para Performance Radio, tú eres lo más importante. Conoce algunos de los testimonios de nuestros clientes.</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+    <!-- End Testimonials Section -->
 
 
 
 
-    <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
 
@@ -546,6 +453,23 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/locutor/rocio.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rocio Aragón</h4>
+                <span>México</span>
+              </div>
+            </div>
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member">
@@ -604,7 +528,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/locutor/chris_homen.jpg" class="img-fluid" alt="">
+                <img src="assets/img/locutor/roberto_garcia.png" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -613,8 +537,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Christofer Homen</h4>
-                <span>Colombia</span>
+                <h4>Roberto Garcia</h4>
+                <span>México</span>
               </div>
             </div>
           </div>
@@ -678,8 +602,89 @@
       </div>
         
         
+        <div class="section-title">
+          <h2>Developer Team</h2>
+          <p>Conoce nuestro equipo de desarrolladores del proyecto.</p>
+        </div>
 
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/wizard1.jpeg" class="img-fluid" alt="">
+                <div class="social">
+       
+                  <a href="https://www.linkedin.com/in/christofer-homen"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Christofer Homen</h4>
+               <span>Front End</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/wizard2.jpg" class="img-fluid" alt="">
+                <div class="social">
+              
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Angie Duque</h4>
+                <span>Back End</span>
+<!--                <span>México</span>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/wizard3.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                
+                  <a href="https://www.linkedin.com/in/dianaostioscruz"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Diana Ostios<h4>
+                  <span>Front End</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/wizard4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                
+                  <a href="http://www.linkedin.com/in/maria-teresa-figuera"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Maria Teresa Figuera</h4>
+                <span>Back End</span>
+
+              </div>
+            </div>
+          </div>
+
+         
+
+
+          
+        </div>
+
+      </div>
     </section><!-- End Team Section -->
+
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
@@ -768,80 +773,8 @@
     </section><!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Preguntas Frecuentes</h2>
-          <p>Generalidades Performance Radio</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">¿Tienen Aplicaciones para Android y iOs?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Claro que sí 😊 puedes encontrar nuestras apps en Play Store y Apple Store como Performance Radio
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"  data-bs-target="#faq-list-2" class="collapsed">¿Tienen chat grupal en la Web?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Claro que sí 😊 puedes entrar al chat en nuestra web, allí tienes la opción de escribirnos en la bandeja de mensajes o unirte al grupo de whatssap.
-                  Web: www.performanceradio.com
-
-                  También, puedes encontrar nuestro grupo en Facebook Performance Radio y te agregamos al chat de Messenger.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">¿Tienen chat grupal en Messenger? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Claro que sí 😊 puedes entrar con el siguiente enlace al grupo, solicitarlo y te agregamos al chat de Messenger.
-                  https://bit.ly/3026SU0
-                  link: https://bit.ly/performancewhat
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">¿A qué WhatsApp puedo pedir una canción? 😊<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Puedes pedir tu canción dando click en nuestro botón de Whatsapp o ingresando al link: https://bit.ly/performancewhat 📲
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Cómo me uno al grupo de locutores? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Estamos encantados de que hagas parte de nuestro equipo, para ello escribe al Whatsapp: +52 782 106 4096
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Cúales son sus redes sociales? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Encuéntranos en todas las redes sociales como Performanceradio. 
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
+  
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -887,7 +820,15 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
 
               <!-- <form action="https://formsubmit.co/performanceradio20@gmail.com" method="post" role="form" class="php-email-form">  -->
+<<<<<<< HEAD
                 <form name="formulario-contacto" method="post" action="assets/js/enviar_correo.php" role="form" class="php-email-form">
+=======
+                <form 
+                action="https://formspree.io/f/xknalqjn"
+                method="POST"
+              
+                >
+>>>>>>> main
                   <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -907,7 +848,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Su mensaje fue enviado, gracias!</div>
               </div>
-              <div class="text-center"><button id="enviarCorreo" type="submit">Enviar Mensaje</button></div>
+              <div class="text-center php-email-form"><button id="enviarCorreo" type="submit" formtarget="_blank">Enviar Mensaje</button></div>
             </form>
                   
           </div>
@@ -955,14 +896,14 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Performance Radio</span></strong>. All Rights Reserved 2022
+        &copy; Copyright <strong><span>Performance Radio</span></strong>. All Rights Reserved 2023
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/valera-free-bootstrap-theme/ -->
-        Designed by <a href="#">Unicornios Espaciales</a>
+        Designed by <a href="#">Pixelated Wizards</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -989,7 +930,11 @@
   <!-- Adicionales -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+<<<<<<< HEAD
   <script>
+=======
+  <!-- <script>
+>>>>>>> main
     const btnEnvio = document.getElementById("enviarCorreo");
     btnEnvio.addEventListener("click", function(e) {
       e.preventDefault();
@@ -1004,7 +949,11 @@
       window.location.href = mailtoLink;
     });
     
+<<<<<<< HEAD
                     </script>
+=======
+                    </script> -->
+>>>>>>> main
 <!-- Script del reproductor -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/jquery.js"></script>
