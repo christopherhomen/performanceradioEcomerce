@@ -32,6 +32,7 @@
   <!--  Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/normalize.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -79,7 +80,7 @@
       </video>
       <div class="hero-container-play">
         <!-- LOGO: -->
-        <a href="#" class="logo me-auto me-lg-0"><img src="assets/img/logo/logo1.png" alt="" class="img-fluid" style="width: 70vh; margin-top: 230px;"></a>
+        <!-- <a href="#" class="logo me-auto me-lg-0"><img src="assets/img/logo/logo1.png" alt="" class="img-fluid" style="width: 70vh; margin-top: 230px;"></a> -->
         <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
 
         <!-- boton play -->
@@ -93,7 +94,7 @@
 
 <!-- Inicio reproductor -->
  
-<div id= "play2" class="containerplay2 img-fluid" style="margin-bottom: 135px;">
+<div id= "play2" class="containerplay2 img-fluid" style="margin-top: 75px;">
   <div class="player img-fluid">
     <div class="player__controls img-fluid">
       <div class="player__btn player__btn--small img-fluid" id="previous">
@@ -105,11 +106,13 @@
       </div>
     </div>
     <div class="player__album img-fluid">
-      <img src="assets/img/locutor/diana_tapatia.png" alt="Album Cover" class="player__img img-fluid" loading="lazy"/>
+      <!-- <img src="assets/img/locutor/diana_tapatia.png" alt="Album Cover" class="player__img img-fluid" loading="lazy"/> -->
+      <img class="cc_streaminfo player__img img-fluid" data-type="trackimageurl" data-username="perfor" />
     </div>
     
-    <h2 id="locutorName" class="player__artist img-fluid">Performance Radio</h2>
-    <h3 class="player__song img-fluid">Radio</h3>
+    <!-- <h2 id="locutorName" class="player__artist img-fluid">Performance Radio</h2> -->
+    <h2 class="cc_streaminfo player__artist img-fluid" data-type="song" data-username="perfor">Cargando ...</h2>
+    <!-- <h3 class="player__song img-fluid">Radio</h3> -->
 
     <input type="range" value="20" min="0" class="player__level img-fluid" id="range" />
     <div class="audio-duration img-fluid">
@@ -117,6 +120,7 @@
       <div class="end img-fluid">04:30</div>
     </div>
 
+    <br>
     <audio class="player__audio img-fluid" controls id="audio">
       
       <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;" type="audio/mpeg" />
@@ -166,8 +170,8 @@
           <li class="dropdown"><a href="iniciosesion.html"><span>Usuario</span> <i class="bi bi-chevron-down"></i></a>
 
             <ul>
-              <li><a th:href="@{/login}">Iniciar Sesión</a></li>
-              <li><a th:href="@{/crear}">Registro</a></li>
+              <li><a href="iniciosesion.html">Iniciar Sesión</a></li>
+              <li><a href="register.html">Registro</a></li>
           
             </ul>
           </li>
@@ -418,6 +422,93 @@
       </div>
     </section><!-- End Services Section -->
 
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Precios</h2>
+              <p>Tenemos un catálogo de precios especial solo para ti.</p>
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6">
+                <div class="box">
+                  <h3>Promociones Publicitarias</h3>
+                  <h4><sup>$</sup>20<span> / mes</span></h4>
+                  <ul>
+                    <li>Obten las mejores espacios para promocionar tus productos en la web</li>
+                    <li>$100: 6 meses</li>         
+                            <!-- <li>Nec feugiat nisl</li>
+                      <li>Nulla at volutpat dola</li>
+                    <li class="na">Pharetra massa</li>
+                    <li class="na">Massa ultricies mi</li> -->
+                  </ul>
+                  <div class="btn-wrap">
+                    <a th:href="@{/login}" class="btn-buy">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                <div class="box featured">
+                  <h3>Promociones Radiales</h3>
+                  <h4><sup>$</sup>20<span> * 30 sg</span></h4>
+                  <ul>
+                    <li>Obten las mejores espacios para promocionar tus productos en nuestros programas en vivo</li>
+                    <li>$100 por diez promociones de 30 segundos a lo largo de un mes.</li>                 <!-- <li>Nec feugiat nisl</li>
+                    <li>Nulla at volutpat dola</li>
+                    <li>Pharetra massa</li>
+                    <li class="na">Massa ultricies mi</li> -->
+                  </ul>
+                  <div class="btn-wrap">
+                    <a th:href="@{/login}" class="btn-buy">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                <div class="box">
+                  <h3>Creación de Cuñas Radiales</h3>
+                  <h4><sup>$</sup>30<span> * 30sg </span></h4>
+                  <ul>
+                    <li>Obten las mejores voces para tus cuñas personalizadas</li>
+                    <!-- <li>Nec feugiat nisl</li>
+                    <li>Nulla at volutpat dola</li>
+                    <li>Pharetra massa</li>
+                    <li>Massa ultricies mi</li> -->
+                  </ul>
+                  <div class="btn-wrap">
+                    <a th:href="@{/login}" class="btn-buy">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+    <!-- 
+              <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                <div class="box">
+                  <span class="advanced">Advanced</span>
+                  <h3>Ultimate</h3>
+                  <h4><sup>$</sup>49<span> / month</span></h4>
+                  <ul>
+                    <li>Aida dere</li>
+                    <li>Nec feugiat nisl</li>
+                    <li>Nulla at volutpat dola</li>
+                    <li>Pharetra massa</li>
+                    <li>Massa ultricies mi</li>
+                  </ul>
+                  <div class="btn-wrap">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                  </div>
+                </div>
+              </div> -->
+    
+            </div>
+    
+          </div>
+        </section>
+        <!-- End Pricing Section -->
+    
     <!-- ======= Testimonials Section ======= -->
 
     <!-- End Testimonials Section -->
@@ -430,7 +521,7 @@
 
         <div class="section-title">
           <h2>Locutores</h2>
-          <p>Conoce nuestro equipo de locutores y desarrolladores del proyecto.</p>
+          <p>Conoce nuestro equipo de locutores y contrata tu favorito.</p>
         </div>
 
         <div class="row">
@@ -440,18 +531,33 @@
               <div class="member-img">
                 <img src="assets/img/locutor/diana_tapatia.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="btn btn-social btn-twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="btn btn-social btn-facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-social btn-instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="btn btn-social btn-linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Diana Tapatia</h4>
                 <span>México</span>
               </div>
+              <div class="member-options">
+                <ul>
+                  <li><button class="btn btn-option" data-lorem="Lorem ipsum dolor sit amet 1"><i class="fas fa-microphone"></i> <span>Adquirir Cuña</span></button></li>
+                  <li><button class="btn btn-option" data-lorem="Lorem ipsum dolor sit amet 2"><i class="fas fa-music"></i> <span>Promoción en Vivo</span></button></li>
+                  <li><button class="btn btn-option info-button" data-lorem="Lorem ipsum dolor sit amet 3"><i class="fas fa-info-circle"></i> <span>Más info</span></button></li>
+                </ul>
+              </div>
+              <div class="popup-locutor">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat erat sit amet leo ullamcorper, in auctor tortor venenatis. Integer ut dapibus enim.</p>
+              </div>
             </div>
           </div>
+          
+          
+          
+          
+          
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member">
@@ -686,91 +792,6 @@
     </section><!-- End Team Section -->
 
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Precios</h2>
-          <p>Tenemos un catálogo de precios especial solo para ti.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box">
-              <h3>Promociones Publicitarias</h3>
-              <h4><sup>$</sup>20<span> / mes</span></h4>
-              <ul>
-                <li>Obten las mejores espacios para promocionar tus productos en la web</li>
-                <li>$100: 6 meses</li>         
-                        <!-- <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li> -->
-              </ul>
-              <div class="btn-wrap">
-                <a th:href="@{/login}" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box featured">
-              <h3>Promociones Radiales</h3>
-              <h4><sup>$</sup>20<span> * 30 sg</span></h4>
-              <ul>
-                <li>Obten las mejores espacios para promocionar tus productos en nuestros programas en vivo</li>
-                <li>$100 por diez promociones de 30 segundos a lo largo de un mes.</li>                 <!-- <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li> -->
-              </ul>
-              <div class="btn-wrap">
-                <a th:href="@{/login}" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Creación de Cuñas Radiales</h3>
-              <h4><sup>$</sup>30<span> * 30sg </span></h4>
-              <ul>
-                <li>Obten las mejores voces para tus cuñas personalizadas</li>
-                <!-- <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li> -->
-              </ul>
-              <div class="btn-wrap">
-                <a th:href="@{/login}" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-<!-- 
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
   
@@ -818,34 +839,40 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
+            <div class="pop-up" id="popup-success">
+              <i class="fas fa-check-circle"></i>
+              <p>Su mensaje fue enviado, ¡gracias!</p>
+            </div>
+          
+            <div class="pop-up" id="popup-error">
+              <i class="fas fa-times-circle"></i>
+              <p>Error en el envío del formulario.</p>
+            </div>
               <!-- <form action="https://formsubmit.co/performanceradio20@gmail.com" method="post" role="form" class="php-email-form">  -->
-                <form 
-                action="https://formspree.io/f/xknalqjn"
-                method="POST"
-              
-                >
+                <form action="https://formspree.io/f/xknalqjn" method="POST" id="myForm">
                   <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Titulo" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Su mensaje fue enviado, gracias!</div>
-              </div>
-              <div class="text-center php-email-form"><button id="enviarCorreo" type="submit" formtarget="_blank">Enviar Mensaje</button></div>
-            </form>
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="_replyto" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Titulo" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div id="loading" style="display: none;">Cargando</div>
+                    <div id="error-message"></div>
+                    <div id="success-message" style="display: none;">Su mensaje fue enviado, ¡gracias!</div>
+                  </div>
+                  <div class="text-center php-email-form">
+                    <button id="enviarCorreo" type="submit">Enviar Mensaje</button>
+                  </div>
+                </form>
                   
           </div>
 
@@ -942,9 +969,17 @@
     });
     
                     </script> -->
+<!-- Script del titulo -->
+<script language="javascript" type="text/javascript" src="https://cp9.serverse.com/system/streaminfo.js"></script>
+
 <!-- Script del reproductor -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/jquery.js"></script>
+<!-- Script del formulario de contacto  -->
+<script src="assets/js/contactForm.js"></script>
+<!-- Script de la info del locutor  -->
+<script src="assets/js/locutorInfo.js"></script>
+
 <script>
   // Acceder al contenido del iframe
   var iframe = document.createElement('iframe');
