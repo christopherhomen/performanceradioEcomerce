@@ -2037,7 +2037,7 @@ section {
 #play2 .player__artist {
   font-size: 1.2em;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-weight: 500;
   opacity: 0.5;
   margin: 20px 0px 0px 0px;
@@ -2093,11 +2093,72 @@ section {
   letter-spacing: 1px;
 }
 
-
-
-.start {
-  flex: 1;
+#play2 .audio-duration i {
+  font-size: 16px;
+  margin-right: 5px;
 }
+
+.range-fill {
+
+  background-color: #5c87fe;
+  background-image: linear-gradient(to right, #5c87fe 0%, #5c87fe var(--fillPercentage, 0%), #d7dbdd var(--fillPercentage, 0%), #d7dbdd 100%);
+}
+
+/*agregado*/
+.volume-bar {
+  width: 200px;
+  height: 6px;
+  background-color: #d7dbdd;
+  position: relative;
+  cursor: pointer;
+}
+
+.volume-fill {
+  height: 100%;
+  background-color: #5c87fe;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.volume-handle {
+  width: 14px;
+  height: 14px;
+  background-color: #5c87fe;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.fa-volume-mute,
+.fa-volume-up {
+  display: none;
+}
+
+.fa-volume-mute.active {
+  display: inline;
+}
+
+.fa-volume-up.active {
+  display: inline;
+}
+
+.audio-duration {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+
+/*agregado*/
+
+/* .start {
+  flex: 1;
+} */
+
+
 
 #play2 .player__audio {
   visibility: hidden;
