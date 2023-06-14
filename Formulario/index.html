@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Forms</title>
+</head>
+<body>
+  <div class="container">
+
+          <button id="Register" onclick="registro()">Sign up</button>
+          <button id="Login" onclick="login()">Login</button>
+
+          <form id="registrationForm"
+          action="https://formspree.io/f/xeqwbrew"
+          method="POST">
+
+            <div class="nombres">
+              <div class="form-group">
+                <input type="text" id="registrationName" placeholder="Name" required name="nombre">
+              </div>
+              <div class="form-group">
+                <input type="text" id="registrationApellido" placeholder="Last name" required name="apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="registrationEmail" placeholder="Email" required name="email">
+            </div>
+            <div class="form-group">
+              <input type="password" id="registrationPassword" placeholder="Password" required name="contraseña">
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkBox1" required>
+              <label id="checkbox" onclick="termycondiciones()">Acepta los terminos y Condiciones</label>
+            </div>
+            <div class="button-gr">
+              <button id="buttonR" onclick="registrar()"  type="submit">Registrar</button>
+            </div>
+          </form>
+
+          <form id="loginForm">
+            <div class="form-group">
+              <input type="email" placeholder="Email" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" id="loginPassword" required>
+            </div>
+            <div>
+              <p>Olvidaste tu clave? <a href="Recupera tu clave"> Click aquí para recuperarla</a></p>
+            </div>
+            <div class="button-gr">
+              <button  id="buttonL" onclick="iniciar()" type="submit">Iniciar sesión</button>
+            </div>
+          </form>
+
+          <div>
+            <img id="imagen1" src="/Img/Imagen.jpg">
+          </div>
+    
+  </div>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
