@@ -76,7 +76,7 @@
     <div class="hero-container img-fluid">
       <!-- Agregado -->
       <video autoplay muted loop id="myVideo" class="content-video">
-        <source src="assets/video/bannerNuevo4.mp4" type="video/mp4">
+        <source src="assets/video/video7.mp4" type="video/mp4">
       </video>
       <div class="hero-container-play">
         <!-- LOGO: -->
@@ -100,7 +100,7 @@
       <div class="player__btn player__btn--small img-fluid" id="previous">
         <i class="fas fa-arrow-left"></i>
       </div>
-      <h5 class="player__title img-fluid">Reproduciendo</h5>
+      <h5 class="player__title img-fluid">En Vivo</h5>
       <div class="player__btn player__btn--small img-fluid" id="icon-menu">
         <i class="fas fa-bars img-fluid"></i>
       </div>
@@ -108,18 +108,25 @@
     <div class="player__album img-fluid">
       <!-- <img src="assets/img/locutor/diana_tapatia.png" alt="Album Cover" class="player__img img-fluid" loading="lazy"/> -->
       <img class="cc_streaminfo player__img img-fluid" data-type="trackimageurl" data-username="perfor" />
+
     </div>
     
     <!-- <h2 id="locutorName" class="player__artist img-fluid">Performance Radio</h2> -->
     <h2 class="cc_streaminfo player__artist img-fluid" data-type="song" data-username="perfor">Cargando ...</h2>
+    <!-- <h2 class="cc_streaminfo" data-type="song" data-username="perfor" id="track-title">Cargando ...</h2> -->
+    
+    
     <!-- <h3 class="player__song img-fluid">Radio</h3> -->
 
-    <input type="range" value="20" min="0" class="player__level img-fluid" id="range" />
+    <input type="range" value="100" min="2" max="100" step="1" class="player__level img-fluid range-fill" id="range" />
     <div class="audio-duration img-fluid">
-      <div class="start img-fluid">00:01</div>
-      <div class="end img-fluid">04:30</div>
-    </div>
-
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-volume-up"></i>
+      </div>
+     
+      
+      
+    
     <br>
     <audio class="player__audio img-fluid" controls id="audio">
       
@@ -1051,6 +1058,10 @@
                     </script> -->
 <!-- Script del titulo -->
 <script language="javascript" type="text/javascript" src="https://cp9.serverse.com/system/streaminfo.js"></script>
+<!-- Script del volumen -->
+<script src="assets/js/playvolume.js"></script>
+<!-- Script de imagen del reproductor  -->
+<script src="assets/js/playimagen.js"></script>
 
 <!-- Script del reproductor -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
