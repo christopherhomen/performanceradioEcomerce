@@ -1959,7 +1959,7 @@ section {
 }
 
 #play2 img {
-  max-width: 100%;
+  max-width: 120%;
 }
 
 #play2 .containerplay2 {
@@ -2023,7 +2023,7 @@ section {
 }
 
 #play2 .player__album {
-  width: 18vh;
+  width: 10vh;
   /* width: 150px; */
 }
 
