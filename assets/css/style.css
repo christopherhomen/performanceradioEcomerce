@@ -2035,6 +2035,8 @@ section {
 
 #play2 .player__artist {
   font-size: 1.2em;
+  text-align: center;
+  text-transform: capitalize;
   font-weight: 500;
   opacity: 0.5;
   margin: 20px 0px 0px 0px;
