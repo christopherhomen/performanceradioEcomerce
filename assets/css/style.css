@@ -2323,7 +2323,9 @@ table {
 @media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
   #play2 .player {
     width: 70vw;
-    height: 90vh;
+    height: 70vh;
+    padding-top: 10vh;
+
     margin-bottom: 100px;
   }
 }
@@ -2332,7 +2334,9 @@ table {
 @media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
   #play2 .player {
     width: 70vw;
-    height: 100vh;
+    height: 70vh;
+    padding-top: 10vh;
+
     margin-bottom: 100px;
   }
 }
@@ -2341,7 +2345,99 @@ table {
 @media screen and (width: 6.1in) and (height: 2.532in) and (resolution: 460dpi) {
   #play2 .player {
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
+    /*padding-top: 10vh;*/
     margin-bottom: 80px;
   }
 }
+
+
+.reproductor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px; 
+}
+.reproductor img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* @media (max-width: 768px) {
+  .reproductor {
+    height: 300px; 
+  }
+
+  #hero {
+    background-image: url('/assets/img/hero2.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  #hero .hero-container {
+    background: none;
+  }
+  #hero video {
+    display: none;
+  }
+} */
+
+/* @media only screen 
+        and (device-width: 430px) 
+        and (device-height: 926px) 
+        and (-webkit-device-pixel-ratio: 3) { 
+
+          .reproductor {
+            height: 300px; 
+          }
+        
+          #hero {
+            background-image: url('/assets/img/hero2.jpg'); 
+            background-size: cover;
+            background-position: center;
+          }
+          #hero .hero-container {
+            background: none;
+          }
+          #hero video {
+            display: none;
+          }
+        } */
+
+        @media screen and (max-device-width:640px), screen and (max-width:640px) 
+        {
+
+
+          
+        
+          #hero {
+            background-image: url('/assets/img/our-values-5.jpg'); /* Ruta de la imagen para dispositivos móviles */
+            background-size: cover;
+            background-position: center;
+          }
+          #hero .hero-container {
+            background: none;
+          }
+          #hero video {
+            display: none;
+          }
+
+          .reproductor {
+            height: 160px; /* Ajusta la altura según tus necesidades en móvil */
+          }
+
+          .our-values .card .video {
+            display: none;
+          }
+          .our-values .card:nth-child(1) {
+            background-image: url('/assets/img/our-values-6.jpg'); /* Ruta de la imagen 1 para dispositivos móviles */
+            background-size: cover;
+            background-position: center;
+          }
+          .our-values .card:nth-child(2) {
+            background-image: url('/assets/img/our-values-5.jpg'); /* Ruta de la imagen 2 para dispositivos móviles */
+            background-size: cover;
+            background-position: center;
+          }
+        }
