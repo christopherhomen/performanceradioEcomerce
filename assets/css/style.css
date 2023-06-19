@@ -2315,3 +2315,33 @@ table {
       display: block;
     }
     
+
+    /*para iphone*/
+
+
+/* Estilos específicos para el teléfono con resolución de 2.796x1.290 píxeles y 460 p/p */
+@media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
+  #play2 .player {
+    width: 70vw;
+    height: 90vh;
+    margin-bottom: 100px;
+  }
+}
+
+    /* Estilos específicos para el teléfono con resolución de 2.796x1.290 píxeles y 460 p/p */
+@media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
+  #play2 .player {
+    width: 70vw;
+    height: 100vh;
+    margin-bottom: 100px;
+  }
+}
+
+/* Estilos específicos para el teléfono con pantalla OLED de 6,1 pulgadas y resolución de 2.532x1.170 píxeles a 460 p/p */
+@media screen and (width: 6.1in) and (height: 2.532in) and (resolution: 460dpi) {
+  #play2 .player {
+    width: 80vw;
+    height: 90vh;
+    margin-bottom: 80px;
+  }
+}
