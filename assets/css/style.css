@@ -2447,4 +2447,8 @@ table {
             background-size: cover;
             background-position: center;
           }
+          .carousel-item img {
+            width: 100%;
+            height: auto;
+            
         }
