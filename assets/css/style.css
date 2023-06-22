@@ -2323,7 +2323,7 @@ table {
 @media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
   #play2 .player {
     width: 70vw;
-    height: 70vh;
+    height: 68vh;
     padding-top: 10vh;
 
     margin-bottom: 100px;
@@ -2334,7 +2334,7 @@ table {
 @media screen and (width: 2796px) and (height: 1290px) and (resolution: 460dpi) {
   #play2 .player {
     width: 70vw;
-    height: 70vh;
+    height: 68vh;
     padding-top: 10vh;
 
     margin-bottom: 100px;
@@ -2344,8 +2344,8 @@ table {
 /* Estilos específicos para el teléfono con pantalla OLED de 6,1 pulgadas y resolución de 2.532x1.170 píxeles a 460 p/p */
 @media screen and (width: 6.1in) and (height: 2.532in) and (resolution: 460dpi) {
   #play2 .player {
-    width: 80vw;
-    height: 80vh;
+    width: 70vw;
+    height: 68vh;
     /*padding-top: 10vh;*/
     margin-bottom: 80px;
   }
@@ -2356,7 +2356,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px; 
+  /* height: 160px;  cambie */
 }
 .reproductor img {
   max-width: 100%;
@@ -2423,10 +2423,17 @@ table {
             display: none;
           }
 
-          .reproductor {
+          /* .reproductor {
             height: 160px; /* Ajusta la altura según tus necesidades en móvil */
-          }
+          /* } */
 
+          #play2 .player {
+            width: 70vw;
+            height: 68vh;
+            /*padding-top: 10vh;*/
+            margin-bottom: 80px;
+          }
+          
           .our-values .card .video {
             display: none;
           }
