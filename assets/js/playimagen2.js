@@ -95,7 +95,7 @@ setInterval(async () => {
 
         let foundImage = false;
         for (const word of words) {
-            const imgPath = `assets/img/locutor/${word.toLowerCase()}.jpg`;
+            const imgPath = `assets/img/locutor/${word.toLowerCase()}.JPG`;
             if (imageExists(imgPath)) {
                 imgElement.src = imgPath;
                 console.log(`Image found: ${imgPath}`);
@@ -108,7 +108,7 @@ setInterval(async () => {
             for (let i = 0; i < words.length; i++) {
                 for (let j = i + 1; j <= words.length; j++) {
                     const wordCombination = words.slice(i, j).join('_').toLowerCase();
-                    const imgPath = `assets/img/locutor/${wordCombination}.jpg`;
+                    const imgPath = `assets/img/locutor/${wordCombination}.JPG`;
                     if (imageExists(imgPath)) {
                         imgElement.src = imgPath;
                         console.log(`Image found: ${imgPath}`);
