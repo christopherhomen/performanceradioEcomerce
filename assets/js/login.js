@@ -26,11 +26,13 @@ logiForm.addEventListener('submit',(e) =>{
     //find() busca elementos
     //comprueba si los datos que ingreso al logearme existen 
     const validUsers = Users.find(user => user.email === email && user.password === password)
+    
 
     //En caso de no concordar los datos, muestra una alerta 
     if(!validUsers){
         return Swal.fire('Usuario y/o contrase.. incorrectas')
     }
+
     //Si son correctos, mostrara un mensaje de Bienvenida
     // Muestra la pop-up    
     Swal.fire({

@@ -36,6 +36,7 @@ signupForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const name = document.querySelector('#name').value
+    const number = document.querySelector('#number').value
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
 
@@ -43,11 +44,57 @@ signupForm.addEventListener('submit', (e) => {
 
     const isUserRegistered = Users.find(user => user.email === email)
 
+    const isNumberRegistered = Users.find(user => user.number=== number)
+
+    const isPasswordRegistred = Users.find(user => user.password===password)
+
+    const numerString = number.toString;
+
+     //---------Validaciones campos vacios-----------///
+
+    if(name==="" || number==="" || email==="" || password===""){
+        return Swal.fire('Tiene campos vacios, por favor, rellenarlos')
+    }
+
+    
+
+    //------Valida contraseña : si existe, si no, que cumpla que tenga minimo 2 Mayusculas y 3 digitos-//
+
+
+    if(isPasswordRegistred){
+        return Swal.fire('Esta contraseña ya esta')
+    }else{
+        let mayuscul = password.match(/[A-Z]/g);
+        let digitos = password.match(/[0-9]/g)
+        let totalMayuscul = mayuscul ? mayuscul.length:0;
+        let totalDigitos = digitos ? digitos.length:0;
+        if(totalMayuscul<2 && totalDigitos<3){
+            return Swal.fire('Su contraseña necesita al menos dos mayusculas y 3 digitos')
+        }
+    }
+
+    //--------Valida si el email ya esta-------//
+
     if(isUserRegistered) {
         return Swal.fire('El usuario ya esta registrado! , intentalo con otro')
     }
 
-    Users.push({name: name, email: email, password: password})
+    //--Verifica si el numero ingresado ya existe---///
+
+    if(isNumberRegistered){
+        return Swal.fire('Uppsss.. el numero ya esta registrado! , intentalo con otro')
+    }
+
+    //--------Validacion de longitud del numero------//
+
+    if(numerString.length<5){
+        return Swal.fire('No es un numero valido, digite un numero de longitud mas grande')
+    }
+
+    //--Se envia el objeto con los diferentes atributos del user-///
+
+    
+    Users.push({name: name, number:number, email: email, password: password})
     localStorage.setItem('users', JSON.stringify(Users))
 
     Swal.fire({
