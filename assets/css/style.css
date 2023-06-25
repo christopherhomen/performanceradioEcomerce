@@ -2315,6 +2315,28 @@ table {
       display: block;
     }
     
+    /*Para los testimonios*/
+    .testimonial-item {
+      text-align: center;
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+    }
+    
+    .testimonial-text {
+      margin-bottom: 20px;
+    }
+    
+    .testimonial-name {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    
+    .testimonial-occupation {
+      color: #888;
+      font-size: 14px;
+    }
+    
 
     /*para iphone*/
 
@@ -2452,3 +2474,4 @@ table {
             height: auto;
             
         }
+      }
