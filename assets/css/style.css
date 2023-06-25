@@ -2427,6 +2427,7 @@ table {
           }
         } */
 
+        /* @media screen and (max-width: 640px)  */
         @media screen and (max-device-width:640px), screen and (max-width:640px) 
         {
 
@@ -2434,7 +2435,7 @@ table {
           
         
           #hero {
-            background-image: url('/assets/img/our-values-5.jpg'); /* Ruta de la imagen para dispositivos móviles */
+            background-image: url('/assets/img/our-values-7.jpg'); /* Ruta de la imagen para dispositivos móviles */
             background-size: cover;
             background-position: center;
           }
@@ -2442,7 +2443,9 @@ table {
             background: none;
           }
           #hero video {
-            display: none;
+            visibility: hidden;
+
+            /* display: none; */
           }
 
           /* .reproductor {
