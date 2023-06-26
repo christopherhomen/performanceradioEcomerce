@@ -1927,6 +1927,23 @@ section {
 		.whatsapp-icon {
 		  margin-top:8px;
 		}
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      20% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+    
+    .whatsapp {
+      animation: heartbeat 1s infinite;
+    }
+    
 		
 
 
@@ -2029,7 +2046,9 @@ section {
 
 #play2 .player__img {
   width: 30vh;
+  height: 19.2vh;
   border-radius: 50%;
+  
   box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
     -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
 }
@@ -2427,6 +2446,8 @@ table {
           }
         } */
 
+        
+
         /* @media screen and (max-width: 640px)  */
         @media screen and (max-device-width:640px), screen and (max-width:640px) 
         {
@@ -2454,7 +2475,7 @@ table {
 
           #play2 .player {
             width: 70vw;
-            height: 68vh;
+            height: 72vh;
             /*padding-top: 10vh;*/
             margin-bottom: 80px;
           }

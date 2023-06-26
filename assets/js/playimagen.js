@@ -1,39 +1,56 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Esperar a que el script externo se cargue
-    var script = document.createElement("script");
-    script.src = "https://cp9.serverse.com/system/streaminfo.js";
-    script.onload = function() {
-      // Obtener el título actualizado
-      var titulo = document.querySelector('h2.cc_streaminfo[data-type="rawmeta"]').innerText;
-  
-      // Escapar los caracteres especiales en el título, si es necesario
-      titulo = encodeURIComponent(titulo);
-  
-      // Construir las URL de búsqueda en iTunes y Last.fm
-      var urliTunes = 'https://itunes.apple.com/search?term=' + titulo + '&limit=1';
-      var urlLastFM = 'https://www.last.fm/search?q=' + titulo + '&type=track';
-  
-      // Realizar una solicitud AJAX utilizando axios para obtener los resultados de búsqueda
-      axios.get(urliTunes)
-        .then(response => {
-          var data = response.data;
-          // Extraer la URL de la imagen de la respuesta JSON de iTunes
-          var imageUrl = data.results[0].artworkUrl100;
-  
-          // Actualizar la etiqueta <img> con la URL de la imagen
-          var imgTag = document.querySelector('img.cc_streaminfo[data-type="trackimageurl"]');
-          imgTag.src = imageUrl;
-        })
-        .catch(error => {
-          console.error('Error al obtener la imagen de iTunes:', error);
-        });
-  
-      // Repetir el proceso para obtener la imagen de Last.fm utilizando la URL correspondiente
-      // y actualizar la etiqueta <img> con la URL obtenida
-  
-      // Ten en cuenta que este es solo un ejemplo básico y puede requerir ajustes adicionales dependiendo del entorno y el flujo de trabajo específico que estés utilizando.
-    };
-  
-    document.head.appendChild(script);
-  });
-  
+//si funciona con locutores, usando youtube, pero a veces no muestra la imagen correcta 
+const h2Element = document.querySelector('h2.cc_streaminfo');
+const imgElement = document.querySelector('img.player__img');
+let prevText = null;
+
+setInterval(async () => {
+    const text = h2Element.textContent;
+    if (text !== prevText) {
+        prevText = text;
+        const words = text.split(' ').filter(word => word.toLowerCase() !== 'desconocido');
+
+        let foundImage = false;
+        for (const word of words) {
+            const imgPath = `assets/img/locutor/${word.toLowerCase()}.JPG`;
+            if (imageExists(imgPath)) {
+                imgElement.src = imgPath;
+                console.log(`Image found: ${imgPath}`);
+                foundImage = true;
+                break;
+            }
+        }
+
+        if (!foundImage) {
+            for (let i = 0; i < words.length; i++) {
+                for (let j = i + 1; j <= words.length; j++) {
+                    const wordCombination = words.slice(i, j).join('_').toLowerCase();
+                    const imgPath = `assets/img/locutor/${wordCombination}.JPG`;
+                    if (imageExists(imgPath)) {
+                        imgElement.src = imgPath;
+                        console.log(`Image found: ${imgPath}`);
+                        foundImage = true;
+                        break;
+                    }
+                }
+                if (foundImage) break;
+            }
+        }
+
+        if (!foundImage) {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${words.join('+')}&type=video&key=AIzaSyCO5F3yenpdk4j1zknsu3rn3NKYzoTvbBA`);
+            const data = await response.json();
+            const videoThumbnail = data.items[0].snippet.thumbnails.high.url;
+            if (videoThumbnail) {
+                imgElement.src = videoThumbnail;
+                console.log(`Video thumbnail found: ${videoThumbnail}`);
+            }
+        }
+    }
+}, 1000);
+
+function imageExists(imageUrl) {
+    const http = new XMLHttpRequest();
+    http.open('HEAD', imageUrl, false);
+    http.send();
+    return http.status !== 404;
+}
