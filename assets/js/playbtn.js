@@ -12,6 +12,7 @@
 // } 
 
 //funciona
+/*
 const audio = document.getElementById("audio");
 const playPause = document.getElementById("play");
 
@@ -26,40 +27,32 @@ playPause.addEventListener("click", () => {
     playPause.querySelector(".play-btn").classList.toggle("hide");
   }
 });
+*/
+
+const audio = document.getElementById("audio");
+const playPause = document.getElementById("play");
+
+playPause.addEventListener("click", () => {
+  if (audio.paused || audio.ended) {
+    playPause.querySelector(".pause-btn").classList.toggle("hide");
+    playPause.querySelector(".play-btn").classList.toggle("hide");
+    audio.src = "assets/audio/intro.mp3";
+    audio.play();
+
+    // Esperar a que termine de reproducir el audio de introducción
+    audio.addEventListener("ended", () => {
+      audio.src = "https://cp9.serverse.com/proxy/perfor?mp=/stream;";
+      audio.play();
+    });
+  } else {
+    audio.pause();
+    playPause.querySelector(".pause-btn").classList.toggle("hide");
+    playPause.querySelector(".play-btn").classList.toggle("hide");
+  }
+});
 
 
 
-// const audio = document.getElementById("audio");
-// const playPause = document.getElementById("play");
-
-// playPause.addEventListener("click", () => {
-//     if (audio.paused || audio.ended) {
-//         playPause.querySelector(".pause-btn").classList.toggle("hide");
-//         playPause.querySelector(".play-btn").classList.toggle("hide");
-//         audio.play();
-//     } else {
-//         audio.pause();
-//         playPause.querySelector(".pause-btn").classList.toggle("hide");
-//         playPause.querySelector(".play-btn").classList.toggle("hide");
-//     }
-// });
-
-// audio.addEventListener('pause', () => {
-//     if (audio.paused && !audio.ended) {
-//         // La reproducción se detuvo debido a una llamada o la reproducción de un video
-//         // Reanudar la reproducción del audio
-//         audio.play();
-//     }
-// });
-
-
-// document.addEventListener('visibilitychange', () => {
-//     if (!document.hidden && audio.paused && !audio.ended) {
-//         // El usuario volvió a la página y el audio está en pausa
-//         // Reanudar la reproducción del audio
-//         audio.play();
-//     }
-// });
 
 
   var chatbox = document.getElementById('fb-customer-chat');

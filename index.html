@@ -35,7 +35,33 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/normalize.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <script>
+    // Función para forzar la recarga del CSS
+    function reloadCSS() {
+      var cssLink = document.getElementById('css-link');
+      cssLink.href = "assets/css/style.css?version=" + new Date().getTime();
+    }
+    
+    // Función para forzar la recarga de los archivos JavaScript
+    function reloadJS() {
+      var scripts = [
+        "assets/js/playbtn.js",
+        "assets/js/playimagen2.js"
+      ];
+      
+      scripts.forEach(function(src) {
+        var scriptElement = document.createElement('script');
+        scriptElement.src = src + "?version=" + new Date().getTime();
+        document.head.appendChild(scriptElement);
+      });
+    }
+    
+    // Cargar los cambios de CSS y JS al cargar la página
+    window.addEventListener('load', function() {
+      reloadCSS();
+      reloadJS();
+    });
+  </script>
 </head>
 
 <body>
