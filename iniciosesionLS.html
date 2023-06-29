@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
+  
 
 
 <head>
@@ -29,7 +29,8 @@
 
   <!--  Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="./assets/css/loginstyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
 
 </head>
 
@@ -51,7 +52,7 @@
 
         <!-- boton play -->
         <a class="btn-get-started scrollto">
-          <audio autoplay controls="controls"> 
+          <audio controls="controls"> 
             <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;" type="audio/mpeg" /> 
           </audio> 
         </a>
@@ -109,7 +110,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!--<section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <ol>
@@ -123,18 +124,25 @@
 
     <section class="inner-page">
       <div class="container">
+        <div id="logo-registro">
+          <img src="assets/img/logo/logo3.png" alt="" id="imagenlogo">
+        </div>
         <!-- <p>
           Bienvenidos
         </p> -->
   
         <div class="formularioiniciosesion">
-          <h2 style="text-align-last: center;">Inicio Sesión</h2>
-          <div align="center" ><img class="img-fluid logo me-auto me-lg-0" src="assets/img/logo/user5.png"></div>
+          <h2 id="encabezado-registro">Inicio Sesión</h2>
+          <div align="center" >
+            <!--<img class="img-fluid logo me-auto me-lg-0" src="assets/img/logo/user5.png">
+            --></div>
           <section>
             <!-- <h2>Login</h2> -->
             <form id="loginForm">
-                <label>Mail</label>
+              <i class="fa-solid fa-user-tie fa-bounce"></i>
+                <label>Email</label>
                 <input type="email" placeholder="..." id="email" required autofocus>
+                <i class="fa-solid fa-user-large-slash fa-beat-fade"></i>
                 <label>Contraseña</label>
                 <input type="password" placeholder="..." id="password" required>
                 <input type="submit" value="Ingresar">

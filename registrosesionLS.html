@@ -29,7 +29,10 @@
   <!--  Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!---CSS stylesheet-->
 
+  <link href="./assets/css/registrostyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
 </head>
 
 <body>
@@ -50,7 +53,7 @@
 
         <!-- boton play -->
         <a class="btn-get-started scrollto">
-          <audio autoplay controls="controls"> 
+          <audio controls="controls"> 
             <source src="https://cp9.serverse.com/proxy/perfor?mp=/stream;" type="audio/mpeg" /> 
           </audio> 
         </a>
@@ -106,7 +109,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!--<section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <ol>
@@ -120,28 +123,38 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Bienvenidos
-        </p>
+        <div id="logo-registro">
+          <img src="assets/img/logo/logo3.png" alt="" id="imagenlogo">
+        </div>
+        <div>
+          <p>ANGLKDS</p>
+        </div>
   
         <div class="formularioiniciosesion">
-          <h2 style="text-align-last: center;">Registro</h2>
-          <div align="center" ><img class="img-fluid logo me-auto me-lg-0" src="assets/img/logo/user6.png"></div>
-          <section>
+          <h2 id="encabezado-registro">Registro</h2>
+          <div align="center" >
+            <!--<img class="img-fluid logo me-auto me-lg-0" src="assets/img/logo/user6.png">-->
+          </div>
+    
+          
             <!-- <h2>Registro</h2> -->
             <form id="signupForm">
-              <label>Nombre Completo</label>
-              <input type="text" placeholder="..." id="name" >
+              <i class="fa-solid fa-user-tie fa-beat-fade"></i>
+              <label>Nombre Completo</label>    
+              <input type="text" placeholder="..." id="name" class="campos">
+              <i class="fa-solid fa-phone-volume fa-shake"></i>
               <label>Numero de telefono</label>
-              <input type="number" placeholder="..." id="number" >
+              <input type="number" placeholder="..." id="number" class="campos">
+              <i class="fa-brands fa-mailchimp fa-beat"></i>
               <label>Email</label>
-              <input type="email" placeholder="..." id="email" >
+              <input type="email" placeholder="..." id="email" class="campos">
+              <i class="fa-solid fa-unlock-keyhole fa-shake"></i>
               <label>Contraseña</label>
-              <input type="password" placeholder="..." id="password">
-              <input type="submit" value="Registro">
+              <input type="password" placeholder="..." id="password" class="campos">
+              <input type="submit" value="Registro" >
           </form>
           <p>Ya tienes una cuenta? <a href="iniciosesionLS.html">Login</a></p>
-        </section>
+        
         </div>
       </div>
     </section>

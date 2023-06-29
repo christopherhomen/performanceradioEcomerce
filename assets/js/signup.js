@@ -87,9 +87,9 @@ signupForm.addEventListener('submit', (e) => {
 
     //--------Validacion de longitud del numero------//
 
-    if(numerString.length<5){
+    /*if(numerString.length<5){
         return Swal.fire('No es un numero valido, digite un numero de longitud mas grande')
-    }
+    }*/
 
     //--Se envia el objeto con los diferentes atributos del user-///
 
