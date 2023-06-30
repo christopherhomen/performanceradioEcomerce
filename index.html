@@ -7,11 +7,20 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Performance Radio</title>
-  <meta content="Performance Radio" name="description">
-  <meta content="Performance Radio" name="keywords">
+  <title>Performance Radio - Emisora de música en vivo</title>
+  <meta content="Emisora de música en vivo" name="description">
+  <meta content="Performance Radio, sentimiento que nos une, música en vivo, emisora de música" name="keywords">
   <meta property="og:image" content="assets/img/logo/redes.png">
 
+
+   <!-- Etiquetas meta para mostrar la imagen en la barra de notificaciones -->
+   <meta name="theme-color" content="#ffffff">
+   <meta name="msapplication-navbutton-color" content="#ffffff">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-title" content="Performance Radio">
+   <!-- <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"> -->
+   
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -38,19 +47,19 @@
   <script>
     // Función para forzar la recarga del CSS
     function reloadCSS() {
-      var cssLink = document.getElementById('css-link');
+      let cssLink = document.getElementById('css-link');
       cssLink.href = "assets/css/style.css?version=" + new Date().getTime();
     }
     
     // Función para forzar la recarga de los archivos JavaScript
     function reloadJS() {
-      var scripts = [
+      let scripts = [
         "assets/js/playbtn.js",
         "assets/js/playimagen2.js"
       ];
       
       scripts.forEach(function(src) {
-        var scriptElement = document.createElement('script');
+        let scriptElement = document.createElement('script');
         scriptElement.src = src + "?version=" + new Date().getTime();
         document.head.appendChild(scriptElement);
       });
@@ -271,7 +280,7 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
             <p>Locutores</p>
           </div>
 
@@ -583,87 +592,9 @@
           </div>
         </section>
         <!-- End Pricing Section -->
-    
-    <!-- ======= Testimonials Section ======= -->
-
-    <!-- End Testimonials Section -->
 
         <!-- prubea  -->
 
-<!-- ======= Services Section ======= -->
-<section id="services" class="services">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Servicios</h2>
-      <p>Conoce nuestros servicios:</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-          <h4 class="title"><a href="">Promociones Publicitarias</a></h4>
-          <p class="description">Obten las mejores espacios para promocionar tus productos en la web</p>
-          <div class="box">
-            <div class="box-inner">
-              <!-- <h3>Promociones Publicitarias</h3> -->
-              <h4><sup>$</sup>20<span> / mes</span></h4>
-              <ul>
-                <li>Obten las mejores espacios para promocionar tus productos en la web</li>
-                <li>$100: 6 meses</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://buy.stripe.com/test_14k8yqfnUgvf8rmcMO" target="_blank" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-boombox" style="color: #e9bf06;"></i></div>
-          <h4 class="title"><a href="">Promociones Radiales</a></h4>
-          <p class="description">Contrata los mejores locutores para promocionar tu marca, empresa y más</p>
-          <div class="box">
-            <div class="box-inner">
-              <!-- <h3>Promociones Radiales</h3> -->
-              <h4><sup>$</sup>10<span> * 30 sg</span></h4>
-              <ul>
-                <li>Obten las mejores espacios para promocionar tus productos en nuestros programas en vivo</li>
-                <li>$60 por diez promociones de 30 segundos a lo largo de un mes.</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://buy.stripe.com/test_5kA4ia0t0en77nidQT" target="_blank" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="bi bi-file-music" style="color: #3fcdc7;"></i></div>
-          <h4 class="title"><a href="">Creación de Cuñas Radiales</a></h4>
-          <p class="description">Obten las mejores voces para tus cuñas personalizadas</p>
-          <div class="box">
-            <div class="box-inner">
-              <!-- <h3>Creación de Cuñas Radiales</h3> -->
-              <h4><sup>$</sup>20<span> * 30sg </span></h4>
-              <ul>
-                <li>Obten las mejores voces para tus cuñas personalizadas</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://buy.stripe.com/test_9AQ2a2dfM4MxePK005" target="_blank" class="btn-buy">Adquirir</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- End Services Section -->
 
 
         <!-- prueba -->
