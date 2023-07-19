@@ -1098,7 +1098,7 @@ section {
 .cta {
   background: #ff6100;
   background-size: cover;
-  padding: 0px 90px;
+  padding: 0px 0px;
 }
 
 .cta h3 {
@@ -2537,5 +2537,10 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
           display: none;
 
         }
+
+        swiper-slide img {
+          display: block;
+          width: 90%;
+      }
         
       }

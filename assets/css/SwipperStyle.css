@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------
+-----#  Slider con swiper----------------------------------------------------------*/
+
+swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*para iphone*/
+
+
+/* Estilos específicos para el teléfono con resolución de 2.796x1.290 píxeles y 460 p/p */
+/* @media screen and(width: 2796px) and(height: 1290px) and(resolution: 460dpi) {
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 50%;
+    }
+}
+
+
+/* Estilos específicos para el teléfono con pantalla OLED de 6,1 pulgadas y resolución de 2.532x1.170 píxeles a 460 p/p */
+/* @media screen and(width: 6.1in) and(height: 2.532in) and(resolution: 460dpi) {
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 50%;
+    }
+
+} */ 

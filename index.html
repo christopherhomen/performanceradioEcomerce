@@ -7,6 +7,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <!--Slider con Swipper-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
   <title>Performance Radio - Emisora de música en vivo</title>
   <meta content="Emisora de música en vivo" name="description">
   <meta content="Performance Radio, sentimiento que nos une, música en vivo, emisora de música" name="keywords">
@@ -37,6 +40,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- reproductor button -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -44,10 +49,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" class="">
 
   <!--  Main CSS File -->
-
+  
+  <link href="./assets/css/SwipperStyle.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js" defer></script>
 <!-- 
   <script>
     // Función para forzar la recarga del CSS
@@ -124,7 +133,7 @@
       <!-- <video autoplay muted loop id="myVideo" class="content-video">
         <source src="assets/video/video8.mp4" type="video/mp4">
       </video> -->
-      <img src="https://media.giphy.com/media/gQvJdypeqrEyhZ9lzn/giphy.gif" alt="" class="banner-image d-none d-sm-block">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRnc292NmR0MTBicm95dnRxeXdyMGtmangwdWYxNjdlaHAyM3BvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gQvJdypeqrEyhZ9lzn/giphy-downsized-large.gif" alt="" class="banner-image d-none d-sm-block">
       
       <div class="hero-container-play">
         <!-- LOGO: -->
@@ -359,14 +368,15 @@
 <!-- Fin prueba -->
 <!--     ======= Cta Section ======= -->
 <section id="cta" class="cta">
-    <div class="container">
+    <!---<div class="container">
 
-           <div class="text-center">
+           <!--<div class="text-center">-->
             <!-- <h3>Nuestros Programas</h3>
             <p>
                 Tenemos un programa especial para ti.</p>
                -->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <!---<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -388,12 +398,82 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" aria-label="Slide 18"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" aria-label="Slide 19"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19" aria-label="Slide 20"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" aria-label="Slide 21"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" aria-label="Slide 21"></button>-->
+
+
+                <swiper-container class="mySwiper img-fluid" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" data-initial-slide="5">
+              <swiper-slide>
+                <img src="./assets/img/programas/14.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/19.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/18.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/8.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/22.png" />
+              </swiper-slide data-initial-slide="1">
+              <swiper-slide>
+                <img src="./assets/img/programas/11.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/9.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/15.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/2.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/4.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/1.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/13.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/12.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/7.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/16.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/10.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/17.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/6.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/5.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/3.png" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./assets/img/programas/20.png" />
+              </swiper-slide>
+            </swiper-container>
+
+  
 
 
 
-
-              </div>
+              <!---</div>
               <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/img/programas/14.png" class="d-block w-100 img-fluid" alt="...">
@@ -471,10 +551,10 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
-            </div>
-        </div>
+            </div>-->
+       <!---- </div>
 
-    </div>
+    </div>-->
 </section>
 
 
@@ -1823,24 +1903,9 @@
   <!-- Adicionales -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
-  <!-- <script>
-    const btnEnvio = document.getElementById("enviarCorreo");
-    btnEnvio.addEventListener("click", function(e) {
-      e.preventDefault();
-      
-      const email = document.getElementById("email").value;
-      const nombre = document.getElementById("name").value;
-      const asunto = document.getElementById("subject").value;
-      const mensaje = document.getElementById("message").value;
-      
-      const mailtoLink = `mailto:chris.a.d.97@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(`Nombre: ${nombre}\nCorreo: ${email}\nMensaje: ${mensaje}`)}`;
-      
-      window.location.href = mailtoLink;
-    });
-    
-                    </script> -->
+  
 
-                    <script src="assets/js/axios.min.js"></script>
+  <script src="assets/js/axios.min.js"></script>
 
 <!-- Script del titulo -->
 <script language="javascript" type="text/javascript" src="https://cp9.serverse.com/system/streaminfo.js"></script>
@@ -1862,31 +1927,41 @@
 <!-- Script de la info del locutor  -->
 <script src="assets/js/locutorInfo.js"></script>
 
+<!-- prubea swiper -->
 <script>
-  // Acceder al contenido del iframe
-  var iframe = document.createElement('iframe');
-  iframe.src = 'https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://cp9.serverse.com/proxy/perfor?mp=/;&fondo=12&formato=mpeg&color=3&titulo=2&autoStart=1&vol=5&tipo=16&nombre=Al+aire%3a&botonPlay=3&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png&server=https://cp9.serverse.com/proxy/perforCHUMILLASmp=/index.htmlCHUMILLASsid=1';
-  iframe.style.display = 'none';
-  document.body.appendChild(iframe);
-
-  iframe.addEventListener('load', function() {
-    // Obtener el nombre del locutor en vivo
-    var span = iframe.contentWindow.document.querySelector('span'); // Reemplaza 'span' con el selector adecuado
-    var locutorName = span.textContent;
-
-    // Mostrar el nombre del locutor en vivo en el h2
-    var h2 = document.getElementById('locutorName');
-    h2.textContent = locutorName;
+  // Tu código JS
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.mySwiper', {
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    initialSlide: 1, // Slide inicial que deseas mostrar (recuerda que los índices comienzan en 0)
+    loop: true,
+    autoplay: {
+      delay: 2000, // Cambio automático cada 2 segundos
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    }
   });
+});
+
 </script>
-<!-- <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1NJ6hpIY4lNL6QfjzZf2HMJ9"
-publishable-key="pk_test_51NIzheIY4lNL6Qfjl4ftT4TQ6KHsWhcnaPmaKd9xfQMp28wuXCOSlMtXHnDFlsljPFeVUub7dckzV4c4lF4uBjbw008ts7dEY7">
-</stripe-pricing-table>
-
- -->
-
-
 
                     
                     
