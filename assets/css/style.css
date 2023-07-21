@@ -2364,6 +2364,11 @@ table {
     }
     
 
+ 
+    #mySwiperMobile{
+      display:none;
+    }
+
     /*para iphone*/
 
 
@@ -2429,6 +2434,7 @@ table {
 
   }
 
+
   swiper-slide {
     background-position: center;
     background-size: cover;
@@ -2478,6 +2484,7 @@ table {
     max-width: 100%;
     height: auto;
   }
+  
   
   swiper-slide {
     background-position: center;
@@ -2588,7 +2595,16 @@ table {
 
         }
 
-     
+        .mySwiper{
+          display: none;
+    
+        }
+
+
+        #mySwiperMobile{
+          display:block;
+        }
+    
         swiper-slide {
           background-position: center;
           background-size: cover;
@@ -2597,10 +2613,10 @@ table {
       }
 
         swiper-slide img {
-          /* display: block; */
-          width: 200%;
+          display: block;
+          width: 100%;
           height: 100%;
-          padding-bottom: 25%;
+          padding-bottom: 10%;
 
 
       }
