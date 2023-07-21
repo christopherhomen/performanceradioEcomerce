@@ -2389,6 +2389,21 @@ table {
 
   }
  
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180%;
+    height: 100%;
+}
+
+  swiper-slide img {
+    /* display: block; */
+    width: 200%;
+    height: 100%;
+    padding-bottom: 25%;
+
+
+}
 }
 
     /* Estilos específicos para el teléfono con resolución de 2.796x1.290 píxeles y 460 p/p */
@@ -2413,6 +2428,22 @@ table {
     display: none;
 
   }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180%;
+    height: 100%;
+}
+
+  swiper-slide img {
+    /* display: block; */
+    width: 200%;
+    height: 100%;
+    padding-bottom: 25%;
+
+
+}
  
 }
 
@@ -2448,6 +2479,21 @@ table {
     height: auto;
   }
   
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180%;
+    height: 100%;
+}
+
+  swiper-slide img {
+    /* display: block; */
+    width: 200%;
+    height: 100%;
+    padding-bottom: 25%;
+
+
+}
 }
 
 
@@ -2464,10 +2510,14 @@ table {
         
           #hero {
            /* background-image: url('https://i.ibb.co/31ZBF1S/our-values-8.jpg'); /* Ruta de la imagen para dispositivos móviles */
-           background-color: #00DBDE;
-background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+           /* background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
             background-size: cover;
-            background-position: center;
+            background-position: center; */
+
+            background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%);
+            background-size: 10000px 100%;
+            animation: bg 15s linear infinite;
           }
           
           #hero .hero-container {
@@ -2538,9 +2588,39 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
         }
 
-        swiper-slide img {
-          display: block;
-          width: 90%;
+     
+        swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 180%;
+          height: 100%;
       }
+
+        swiper-slide img {
+          /* display: block; */
+          width: 200%;
+          height: 100%;
+          padding-bottom: 25%;
+
+
+      }
+
+      swiper-container {
+        --swiper-slide-width: 100% !important;
+      }
+
+      .mySwiper .swiper-slide-active {
+        visibility: hidden;
+      }
+
+      
+      @keyframes bg{
+        0%{
+          background-position-x: 0;
+        }
         
+        100%{
+          background-position-x: 10000px;
+        }
+      }
       }
